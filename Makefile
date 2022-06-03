@@ -29,7 +29,7 @@ all: buildroot
 	touch .installed_xtools
 
 buildroot-a13-olinuxino:
-	git clone git://github.com/mireq/buildroot-a13-olinuxino
+	git clone https://github.com/mireq/buildroot-a13-olinuxino
 
 .configured_buildroot: buildroot-a13-olinuxino .installed_xtools
 	cat buildroot-a13-olinuxino/configs/a13_olinuxino_defconfig > buildroot-a13-olinuxino/configs/a13_olinuxino_crossng_defconfig
